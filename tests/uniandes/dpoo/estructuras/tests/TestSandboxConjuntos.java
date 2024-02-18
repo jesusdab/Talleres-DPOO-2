@@ -288,7 +288,7 @@ class TestSandboxConjuntos
     void testReiniciarConjuntoCadenas( )
     {
         String[] nuevosValores = "Esta es una prueba con cadenas y con cadenas y con cadenas!".split( " " );
-        sencillo.reiniciarConjuntoCadenas( Arrays.asList( nuevosValores ) );
+        sencillo.reiniciarConjuntoCadenas( nuevosValores );
         assertEquals( 8, sencillo.getCantidadCadenas( ), "La nueva cantidad de enteros no es la correcta" );
 
         List<String> copia = sencillo.getCadenasComoLista( );
